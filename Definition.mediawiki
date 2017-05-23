@@ -1,0 +1,29 @@
+= SmartHealth =
+* Esse projeto tem como objetivo criar um auxiliador de saude integrado com o PocketDoc.
+* Ele sera focado na parte de alimentacao e exercicios fisicos.
+* Tera ampla conexao com redes sociais (ate onde o usuario permitir).
+
+== Descricao ==
+=== Alimentacao ===
+O sistema tera um base de dados de receitas ou comidas instaneas (cereais, snacks..., que sera nada mais que uma receita onde o modo de preparo sera o proprio ingrediente) onde sera possivel calcular seu valor nutricional a partir dos seus ingredientes e como eles foram usados (assados, cozidos, crus), pois isso vai alterar sua tabela nutricional como proteinas que se desnaturam a altas temperaturas alem de mostrar o quanto vai ficando saudavel a medida que se cozinha (por matar microbios e etc), alem de corte e tempo de fogo afim de maximizar a homogeneidade do preparo assim recomendando a maneira mais saudavel de preparo ou mostrar o quao saudavel eh na receita em questao. Onde estes ingredientes devem ser colocados de todas as marcas pois existem diferencas nutricionais, e receitas recomendam marca X ou Y.
+O sistema vai atender ao usuario mais expert ao mais leigo como:
+
+* Leigo) Caso o usuario nao tenha ideia do quanto ele vai querer comer em Kcal, quantas refeicoes, Que horarios a alimentacao pode demorar para se prepara e quanto tempo, a quantidade Proteina, Carb e etc, vai existir uma lista de dietas em categoria que o cara pode organizar de mais usadas a mais novas.
+
+* Expert) Caso ele saiba exatamente o computador vai pegar os dados que ele colocou como quanto ele vai querer comer em Kcal, quantas refeicoes, Que horarios a alimentacao pode demorar para se prepara e quanto tempo, dividir em uma pra cada atividade (dieta de trabalho, exercicio fisico, descanso, etc...), era (ex em exercicio fisico Bucking),a quantidade Proteina, Carb e etc, ele vai pegar o banco de dados de tabela nutricional de produtos e chegar o mais proximo possivel daqueles valores recebidos, e a partir das opcoes de alimentos de preferencia, alergias, ele vai escolher as receitas que batem com seus horarios, para nao ter que comer nada muito repetitivo. 
+
+* OBS.: Quando o usuario nao souber, mais quer uma coisa levemente mais direcionada ele bota coisas como o peso e altura dele
+e teria umas curiosidades sobre cada coisa, tipo como aumentar metabolismo ou massa muscular, perder peso, sobre proteinas, carbs... etc. Sera incluido suplementos e precos dos alimentos/receitas (restaurante), para que o sistema faca dietas compativeis com o bolso do usuario. Alem de informar caso alguma dieta/alimento/suplemento tenha algum efeito colateral e qual e mostrando estudos mostrando pq sim/nao funciona faz mal/bem.
+
+Ele tambem pode colocar refeicoes de contigencia caso nao seja possivel comer tal refeicao e existira um controle das refeicoes que ele ingeriu.
+
+* OBS.: Receitas podem ser privadas, como a de um restaurante, para que o usuario possa ter a possibilidade de colocar comidas de um restaurante X sem que tenha que comprometer a precisao do seu gerenciamento alimentar.
+
+=== Fisico ===
+Vai existir um gerenciador fisico onde ele pode ver, seus exercicios quantos foram praticados e como foram preticados, calorias perdidas, peso, massa muscular, ensinamentos de como fazer exercicios fisicos, fotos para acompanhar o desenvolvimento.
+
+== Banco de Dados ==
+Neste Banco sera possivel colocar os componentes Genericos como Proteinas, Gorduras, Calorias e ir especificando como gordura saturada ate uma gordura saturada X. Todos serao armazenados em porcao de 1kg, mesmo que se coloque uma porcao diferente ele deve fazer uma regra de tres para corrigir para quantidade ideal.
+
+Deve ser feitas categorias ate chegar no mais especifico, ex.:
+* Carne>Bovina>Patinho>Sem Gordura>Marca X
